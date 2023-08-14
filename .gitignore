@@ -1,0 +1,9 @@
+/themes/**/public/
+/themes/twenty*/
+/wordpress/
+/plugins/
+/db/
+
+node_modules/
+
+.DS_Store

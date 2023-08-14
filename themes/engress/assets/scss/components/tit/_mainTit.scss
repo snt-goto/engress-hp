@@ -1,0 +1,14 @@
+.eng-mainTit {
+  font-size: 2.2rem;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+
+  &.navy {
+    color: $color-1;
+  }
+
+  &.white {
+    color: $white;
+  }
+}

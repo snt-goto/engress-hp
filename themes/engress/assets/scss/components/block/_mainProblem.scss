@@ -1,0 +1,50 @@
+.eng-mainProblem {
+  background-color: $color-1;
+  padding: 3.9rem 0 3.3rem;
+  position: relative;
+
+  & > h2 {
+    color: $white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  & > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 5rem;
+    transform: translateX(-1rem);
+  }
+
+  &__school {
+    background-color: $white;
+    padding: 0.7rem 1rem;
+
+    & div {
+      border: 5px solid $color-1;
+      padding: 0.6rem 0 1.5rem;
+      text-align: center;
+    }
+
+    & h3 {
+      color: $color-1;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 1.2rem;
+
+      & > span {
+        background: $linear-gradient-1;
+      }
+    }
+
+    & p {
+      color: $color-1;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+}

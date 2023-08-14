@@ -1,0 +1,11 @@
+div[class*='eng-wrap'] {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.eng-wrap {
+  &__70 {
+    width: 70%;
+  }
+}

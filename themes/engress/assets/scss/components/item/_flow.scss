@@ -1,0 +1,48 @@
+.eng-flow {
+  align-items: center;
+  background-color: $color-4;
+  display: flex;
+  position: relative;
+
+  &:nth-child(n + 2) {
+    margin-top: 0.5rem;
+  }
+
+  & > p {
+    font-size: 1rem;
+    font-weight: 700;
+
+    &:nth-child(1) {
+      align-items: center;
+      background-color: $color-2;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &:nth-child(2) {
+      font-size: 1.1rem;
+      padding: 0 1.3rem;
+      position: relative;
+      width: 13.4rem;
+
+      &::before {
+        background-color: $color-5;
+        content: '';
+        height: 1.8rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+    }
+
+    &:nth-child(3) {
+      font-weight: 500;
+      padding: 0 3rem;
+    }
+  }
+}

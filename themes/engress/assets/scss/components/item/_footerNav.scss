@@ -1,0 +1,37 @@
+.eng-footerNav {
+  padding: 0 1.3rem;
+  position: relative;
+
+  &:nth-child(1) {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &:nth-child(n + 2) {
+    &::before {
+      background-color: $white;
+      content: '';
+      height: 1.4rem;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+    }
+  }
+
+  & > a {
+    color: $white;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.eng-problem {
+  color: $white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 2.1;
+  position: relative;
+  text-align: center;
+
+  &:nth-child(2) {
+    margin: 0 1.8rem 0 3.5rem;
+  }
+}

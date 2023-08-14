@@ -1,0 +1,23 @@
+.eng-tel {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0 1.4rem;
+  position: relative;
+  transform: translateX(-3.6rem);
+
+  & > p {
+    color: $color-1;
+    font-size: 1rem;
+    font-weight: 700;
+
+    &:nth-child(2) {
+      font-size: 2.2rem;
+      margin: 0 1.2rem -0.5rem;
+    }
+
+    &:nth-child(3) {
+      font-weight: 500;
+    }
+  }
+}

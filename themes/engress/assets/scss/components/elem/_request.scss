@@ -1,0 +1,44 @@
+.eng-request {
+  align-items: center;
+  background-image: url(/wp-content/themes/engress/assets/img/request_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 18rem;
+  position: relative;
+
+  & > a {
+    color: $white;
+    display: block;
+    font-size: 1rem;
+
+    &.contact {
+      font-weight: 500;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.request {
+      align-items: center;
+      background-color: $color-2;
+      border-radius: 25px;
+      display: flex;
+      font-weight: 700;
+      height: 3.1rem;
+      justify-content: center;
+      margin: 1rem 0 1.3rem;
+      text-decoration: none;
+      width: 17.5rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
