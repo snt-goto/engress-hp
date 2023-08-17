@@ -1,0 +1,37 @@
+.eng-lowerServiceSystem {
+  padding-top: 3.6rem;
+  position: relative;
+
+  & p {
+    color: $color-1;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &__price {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0 2.5rem;
+
+    & > h3 {
+      align-items: center;
+      background-color: $color-1;
+      color: $white;
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: 700;
+      height: 5.6rem;
+      justify-content: center;
+      width: 17.5rem;
+    }
+
+    & > img {
+      display: block;
+      height: auto;
+      margin: 0 2.2rem;
+      width: 1.6rem;
+    }
+  }
+}

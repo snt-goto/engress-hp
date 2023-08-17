@@ -17,20 +17,27 @@
                                 'post_type' => 'blog'
                             );
                             $news_posts = get_posts($args);
-                            ?>
+                        ?>
                         <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
-                        <li>
-                            <a class="eng-mainPost__link blog" href="<?php the_permalink(); ?>">
-                                <div class="eng-mainPost__img">
-                                    <p><?php the_field('category'); ?></p>
-                                    <img src="<?php the_field('img'); ?>" alt="" />
-                                </div>
-                                <div class="eng-mainPost__txt">
-                                    <p><?php echo wp_trim_words( get_the_title(), 20, '…' ); ?></p>
-                                    <p><?php echo get_the_date(); ?></p>
-                                </div>
-                            </a>
-                        </li>
+                            <?php
+                                $category = get_field('category');
+                                $date = get_the_date();
+                                $href = get_permalink();
+                                $img = get_field('img');
+                                $tit = get_the_title();
+                            ?>
+                            <li>
+                                <a class="eng-mainPost__link blog" href="<?php echo $href; ?>">
+                                    <div class="eng-mainPost__img">
+                                        <p><?php echo $category; ?></p>
+                                        <img src="<?php echo $img; ?>" alt="" />
+                                    </div>
+                                    <div class="eng-mainPost__txt">
+                                        <p><?php echo wp_trim_words($tit, 20, '…'); ?></p>
+                                        <p><?php echo $date; ?></p>
+                                    </div>
+                                </a>
+                            </li>
                         <?php endforeach; ?>
                         <?php wp_reset_postdata(); ?>
                     </ul>
@@ -50,14 +57,19 @@
                                 'post_type' => 'news'
                             );
                             $news_posts = get_posts($args);
-                            ?>
+                        ?>
                         <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
-                        <li>
-                            <a class="eng-mainPost__link" href="<?php the_permalink(); ?>">
-                                <p><?php echo get_the_date(); ?></p>
-                                <p><?php echo wp_trim_words( get_the_title(), 20, '…' ); ?></p>
-                            </a>
-                        </li>
+                            <?php
+                                $date = get_the_date();
+                                $href = get_permalink();
+                                $tit = get_the_title();
+                            ?>
+                            <li>
+                                <a class="eng-mainPost__link" href="<?php echo $href; ?>">
+                                    <p><?php echo $date; ?></p>
+                                    <p><?php echo wp_trim_words($tit, 20, '…'); ?></p>
+                                </a>
+                            </li>
                         <?php endforeach; ?>
                         <?php wp_reset_postdata(); ?>
                     </ul>

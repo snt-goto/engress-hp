@@ -17,16 +17,23 @@
                     $example_posts = get_posts($args);
                 ?>
                 <?php foreach ($example_posts as $post) : setup_postdata($post); ?>
+                    <?php
+                        $img = get_field('img');
+                        $job = get_field('job');
+                        $name = get_field('name');
+                        $result = get_field('result');
+                        $tit = get_the_title();
+                    ?>
                     <li class="eng-mainExample__item">
-                        <p class="tit"><?php the_title(); ?></p>
+                        <p class="tit"><?php echo $tit; ?></p>
                         <div class="eng-mainExample__img">
-                            <img src="<?php the_field('img'); ?>" alt="" />
+                            <img src="<?php echo $img ?>" alt="" />
                         </div>
                         <div class="eng-mainExample__info">
-                            <p class="job"><?php the_field('job'); ?></p>
-                            <p class="name"><?php the_field('name'); ?>さん</p>
+                            <p class="job"><?php echo $job; ?></p>
+                            <p class="name"><?php echo $name; ?>さん</p>
                         </div>
-                        <p class="result"><?php the_field('result'); ?></p>
+                        <p class="result"><?php echo $result; ?></p>
                     </li>
                 <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>
