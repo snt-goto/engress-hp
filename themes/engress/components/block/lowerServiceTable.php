@@ -38,7 +38,7 @@
                         <?php endif; ?>
                         <div class="eng-lowerServiceTable__txt">
                             <div class="eng-lowerServiceTable__price">
-                                <p><?php echo $price ?>円〜</p>
+                                <p <?php if($tag == 'おすすめ') echo 'class="recommendation"'; ?>><?php echo $price ?>円〜</p>
                                 <p>*月額（税抜価格）</p>
                             </div>
                             <ul class="eng-lowerServiceTable__detailList">

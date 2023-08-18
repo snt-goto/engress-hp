@@ -33,7 +33,7 @@
                                         <img src="<?php echo $img; ?>" alt="" />
                                     </div>
                                     <div class="eng-mainPost__txt">
-                                        <p><?php echo wp_trim_words($tit, 20, '…'); ?></p>
+                                        <p><?php echo wp_trim_words($tit, 40, '…'); ?></p>
                                         <p><?php echo $date; ?></p>
                                     </div>
                                 </a>
@@ -67,7 +67,7 @@
                             <li>
                                 <a class="eng-mainPost__link" href="<?php echo $href; ?>">
                                     <p><?php echo $date; ?></p>
-                                    <p><?php echo wp_trim_words($tit, 20, '…'); ?></p>
+                                    <p><?php echo wp_trim_words($tit, 40, '…'); ?></p>
                                 </a>
                             </li>
                         <?php endforeach; ?>

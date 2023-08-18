@@ -41,6 +41,10 @@
     height: 15rem;
     justify-content: center;
 
+    &.news {
+      background-image: url(/wp-content/themes/engress/assets/img/news_lowerVisual_bg.jpg);
+    }
+
     &.service {
       background-image: url(/wp-content/themes/engress/assets/img/service_lowerVisual_bg.jpg);
     }
