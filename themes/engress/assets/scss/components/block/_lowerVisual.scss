@@ -1,37 +1,6 @@
 .eng-lowerVisual {
   position: relative;
 
-  &__breadcrumbs {
-    color: $color-1;
-
-    & a {
-      color: $color-1;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    & span {
-      color: $color-1;
-      margin: 0 0.3rem;
-
-      &:nth-child(1) {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &__nav {
-    background-color: $color-4;
-    padding: 1rem 0;
-  }
-
   &__tit {
     align-items: center;
     background-position: center;

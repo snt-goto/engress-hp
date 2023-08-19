@@ -12,6 +12,7 @@
         'tit' => 'コース・料金'
     ];
     get_template_part('components/block/lowerVisual', null, $args );
+    get_template_part('components/block/lowerBreadcrumbNav');
     get_template_part('components/block/lowerServiceSystem');
     get_template_part('components/block/lowerServiceTable');
     get_template_part('components/layout/footer');
