@@ -39,52 +39,5 @@
       }
     }
   }
-
-  & .nav-links {
-    display: flex;
-    justify-content: center;
-
-    & > a {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    & > .page-numbers {
-      align-items: center;
-      border: 1px solid $color-1;
-      color: $color-1;
-      display: flex;
-      font-size: 1rem;
-      font-weight: 700;
-      height: 3.1rem;
-      justify-content: center;
-      margin: 0 0.5rem;
-      width: 3.1rem;
-
-      &:nth-child(1) {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &.current {
-        background-color: $color-1;
-        border: none;
-        color: $white;
-      }
-
-      &.dots {
-        border: none;
-        height: auto;
-        margin: 0 1.5rem;
-        width: auto;
-      }
-    }
-  }
 }
 
