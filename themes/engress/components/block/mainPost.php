@@ -20,10 +20,10 @@
                         ?>
                         <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
                             <?php
-                                $category = get_field('category');
+                                $category = get_the_category()[0] -> name;
                                 $date = get_the_date();
                                 $href = get_permalink();
-                                $img = get_field('img');
+                                $img = get_the_post_thumbnail_url();
                                 $tit = get_the_title();
                             ?>
                             <li>

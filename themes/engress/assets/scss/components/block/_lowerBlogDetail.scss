@@ -1,0 +1,244 @@
+.eng-lowerBlogDetail {
+  padding: 3.7rem 0 4.3rem;
+  position: relative;
+
+  &__categories {
+    list-style: none;
+
+    & > li {
+      &:nth-child(n + 2) {
+        margin-top: 0.4rem;
+      }
+
+      & > a {
+        color: $color-1;
+        font-family: $yu-gothic;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__img {
+    height: 23.1rem;
+    margin-bottom: 2.3rem;
+    position: relative;
+    width: 100%;
+
+    & > img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0 1.5rem;
+
+
+    & > p {
+      color: $color-1;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  &__left {
+    width: 100%;
+
+    & > h1 {
+      color: $color-1;
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+
+    & > p {
+      font-weight: 500;
+
+      &.category {
+        background-color: $color-1;
+        color: $white;
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-bottom: 1.4rem;
+        padding: 0.3rem 1.6rem;
+      }
+    }
+  }
+
+  &__recommendedArticles {
+    margin-top: 3.6rem;
+
+    & > h2 {
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.4rem;
+    }
+
+    & > ul {
+      list-style: none;
+    }
+  }
+
+  &__recommendedArticlesImg {
+    flex-shrink: 0;
+    height: 8rem;
+    margin-right: 2rem;
+    position: relative;
+    width: 13.1rem;
+
+    & > img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+    }
+
+    & > p {
+      background-color: $color-1;
+      color: $white;
+      font-size: 0.8rem;
+      font-weight: 500;
+      left: 0;
+      padding: 0.3rem 0.7rem;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  &__recommendedArticlesItem {
+    &:nth-child(n + 2) {
+      margin-top: 1.8rem;
+    }
+
+    & > a {
+      display: flex;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__recommendedArticlesTit {
+    & > h3 {
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    & > p {
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__relatedArticles {
+    list-style: none;
+    margin-bottom: 3rem;
+
+    & > li {
+      &:nth-child(n + 2) {
+        margin-top: 2.6rem;
+      }
+    }
+  }
+
+  &__relatedArticlesImg {
+    flex-shrink: 0;
+    height: 4.3rem;
+    margin-right: 1rem;
+    position: relative;
+    width: 6.2rem;
+
+    & > img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__relatedArticlesLink {
+    display: flex;
+    text-decoration: none;
+
+    & > h3 {
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 2;
+      margin-top: -0.4rem;
+      padding-right: 0.5rem;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__right {
+    flex-shrink: 0;
+    margin-left: 2.2rem;
+    width: 16.8rem;
+
+    & h2 {
+      background-color: $color-1;
+      border: 1px solid $color-3;
+      color: $white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1.8rem;
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+  }
+
+  & .addtoany_shortcode {
+    & > .addtoany_list {
+      display: flex;
+      line-height: normal !important;
+
+      & > a {
+        display: flex;
+        padding: 0;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:nth-child(n + 2) {
+          margin-left: .3rem;
+        }
+      }
+    }
+  }
+}

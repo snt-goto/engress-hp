@@ -23,6 +23,12 @@
     }
     add_action( 'wp_enqueue_scripts', 'add_link_files' );
 
+    // 投稿非表示
+    function remove_menus() {
+        remove_menu_page( 'edit.php' );
+    }
+    add_action( 'admin_menu', 'remove_menus' );
+
     // 管理バー非表示
     add_filter( 'show_admin_bar', '__return_false' );
 

@@ -1,33 +1,49 @@
+<?php
+    $category = get_queried_object();
+    $category_name = $category -> name;
+    $category_slug = $category -> slug;
+?>
+
 <div class="eng-lowerBlog">
     <?php
-        $args = [
-            'tit' => '新着一覧'
-        ];
-        get_template_part('components/tit/lowerTit', null, $args );
+        if (is_category()) {
+            $cat_tit = $category_name . "一覧";
+
+            $args = [
+                'tit' => $cat_tit
+            ];
+            get_template_part('components/tit/lowerTit', null, $args );
+        } else {
+            $args = [
+                'tit' => '新着一覧'
+            ];
+            get_template_part('components/tit/lowerTit', null, $args );
+        }
     ?>
     <?php
         $args = array(
             'posts_per_page' => 10,
             'post_type' => 'blog',
+            'category_name' => $category_slug
         );
-        $news_posts = get_posts($args);
+        $blog_posts = get_posts($args);
     ?>
     <div class="eng-maxWidth">
         <div class="eng-wrap__70">
             <ul class="eng-lowerBlog__list">
-                <?php foreach ($news_posts as $post) : setup_postdata($post);?>
+                <?php foreach ($blog_posts as $post) : setup_postdata($post);?>
                     <?php
-                        $category = get_field('category');
+                        $category = get_the_category()[0] -> name;
                         $cont = get_the_content();
                         $date = get_the_date();
                         $href = get_permalink();
-                        $img = get_field('img');
+                        $img = get_the_post_thumbnail_url();
                         $tit = get_the_title();
                     ?>
                     <li>
-                        <a class="eng-lowerBlog__link">
+                        <a class="eng-lowerBlog__link" href="<?php echo $href ?>">
                             <div class="eng-lowerBlog__img">
-                                <p><?php echo $category ;?></p>
+                                <p><?php echo $category; ?></p>
                                 <img src="<?php echo $img; ?>" alt="" />
                             </div>
                             <div class="eng-lowerBlog__txt">
