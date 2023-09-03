@@ -9,7 +9,7 @@
 
 <footer class="eng-footer">
     <?php
-        if (!is_page('2357')) {
+        if (!is_page(array('2357','2366'))) {
             get_template_part('components/elem/request');
             get_template_part('components/elem/tel');
         }

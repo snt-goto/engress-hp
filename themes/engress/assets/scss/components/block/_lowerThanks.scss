@@ -1,0 +1,30 @@
+.eng-lowerThanks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  position: relative;
+
+  & > a {
+    color: $color-1;
+    display: inline-block;
+    font-family: $yu-gothic;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & > p {
+    color: $color-1;
+    font-family: $yu-gothic;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 4.5rem;
+    text-align: center;
+  }
+}

@@ -642,6 +642,41 @@
   padding: 1.8rem 1.5rem 5.8rem;
 }
 
+.eng-lowerThanks {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 0;
+  position: relative;
+}
+.eng-lowerThanks > a {
+  color: #1B224C;
+  display: inline-block;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.eng-lowerThanks > a:hover {
+  text-decoration: underline;
+}
+.eng-lowerThanks > p {
+  color: #1B224C;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 4.5rem;
+  text-align: center;
+}
+
 .eng-lowerVisual {
   position: relative;
 }
