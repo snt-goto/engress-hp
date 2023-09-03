@@ -8,8 +8,12 @@
 ?>
 
 <footer class="eng-footer">
-    <?php get_template_part('components/elem/request'); ?>
-    <?php get_template_part('components/elem/tel'); ?>
+    <?php
+        if (!is_page('2357')) {
+            get_template_part('components/elem/request');
+            get_template_part('components/elem/tel');
+        }
+    ?>
     <div class="eng-footer__cont">
         <div class="eng-maxWidth">
             <div class="eng-wrap__70">

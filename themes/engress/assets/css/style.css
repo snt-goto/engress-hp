@@ -304,6 +304,132 @@
   margin-right: 0;
 }
 
+.eng-lowerContact {
+  padding: 3.6rem 0 5.1rem;
+  position: relative;
+}
+.eng-lowerContact__main > p {
+  color: #1B224C;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+.eng-lowerContact form > div:nth-child(n+3) {
+  margin-top: 1.2rem;
+}
+.eng-lowerContact form > div.kind {
+  margin-top: 1.4rem;
+}
+.eng-lowerContact form > div.privacy-policy {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.eng-lowerContact form > div.privacy-policy input {
+  margin-right: 0.5rem;
+}
+.eng-lowerContact form > div.privacy-policy label {
+  margin: 0;
+}
+.eng-lowerContact form > div.privacy-policy .wpcf7-list-item {
+  margin: 0;
+}
+.eng-lowerContact form > div.privacy-policy > p:nth-child(1) {
+  color: #1B224C;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.eng-lowerContact form > div.privacy-policy > p:nth-child(1) > a {
+  color: #F5A623;
+  text-decoration: underline;
+}
+.eng-lowerContact form > div.privacy-policy > p:nth-child(1) > a:hover {
+  text-decoration: underline;
+}
+.eng-lowerContact form > div.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.6rem;
+}
+.eng-lowerContact form > div.submit > p {
+  -webkit-transform: translateX(36px);
+          transform: translateX(36px);
+}
+.eng-lowerContact form input[type=email], .eng-lowerContact form input[type=tel], .eng-lowerContact form input[type=text], .eng-lowerContact form textarea {
+  border: 0.5px solid #1B224C;
+  color: #1B224C;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.9rem 1.2rem;
+  width: 100%;
+}
+.eng-lowerContact form input[type=email]::-webkit-input-placeholder, .eng-lowerContact form input[type=tel]::-webkit-input-placeholder, .eng-lowerContact form input[type=text]::-webkit-input-placeholder, .eng-lowerContact form textarea::-webkit-input-placeholder {
+  color: #B4B4B4 !important;
+}
+.eng-lowerContact form input[type=email]::-moz-placeholder, .eng-lowerContact form input[type=tel]::-moz-placeholder, .eng-lowerContact form input[type=text]::-moz-placeholder, .eng-lowerContact form textarea::-moz-placeholder {
+  color: #B4B4B4 !important;
+}
+.eng-lowerContact form input[type=email]:-ms-input-placeholder, .eng-lowerContact form input[type=tel]:-ms-input-placeholder, .eng-lowerContact form input[type=text]:-ms-input-placeholder, .eng-lowerContact form textarea:-ms-input-placeholder {
+  color: #B4B4B4 !important;
+}
+.eng-lowerContact form input[type=email]::-ms-input-placeholder, .eng-lowerContact form input[type=tel]::-ms-input-placeholder, .eng-lowerContact form input[type=text]::-ms-input-placeholder, .eng-lowerContact form textarea::-ms-input-placeholder {
+  color: #B4B4B4 !important;
+}
+.eng-lowerContact form input[type=email]::placeholder, .eng-lowerContact form input[type=tel]::placeholder, .eng-lowerContact form input[type=text]::placeholder, .eng-lowerContact form textarea::placeholder {
+  color: #B4B4B4 !important;
+}
+.eng-lowerContact form input[type=radio] {
+  margin-right: 0.7rem;
+}
+.eng-lowerContact form input[type=submit] {
+  background-color: #1B224C;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 4.2rem;
+}
+.eng-lowerContact form label {
+  color: #1B224C;
+  display: inline-block;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.eng-lowerContact form label > strong {
+  font-weight: 700;
+}
+.eng-lowerContact form textarea {
+  height: 15rem;
+}
+.eng-lowerContact form .wpcf7-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.eng-lowerContact form .wpcf7-radio > span {
+  margin: 0;
+}
+.eng-lowerContact form .wpcf7-radio > span:nth-child(n+2) {
+  margin-top: 0.6rem;
+}
+.eng-lowerContact form .wpcf7-radio > span > label {
+  margin: 0;
+}
+
 .eng-lowerNews {
   padding: 3.6rem 0 2.8rem;
   position: relative;
@@ -536,6 +662,9 @@
 }
 .eng-lowerVisual__tit.blog {
   background-image: url(/wp-content/themes/engress/assets/img/blog_lowerVisual_bg.jpg);
+}
+.eng-lowerVisual__tit.contact {
+  background-image: url(/wp-content/themes/engress/assets/img/contact_lowerVisual_bg.jpg);
 }
 .eng-lowerVisual__tit.news {
   background-image: url(/wp-content/themes/engress/assets/img/news_lowerVisual_bg.jpg);
@@ -991,6 +1120,9 @@ div[class*=eng-wrap] {
   position: relative;
 }
 
+.eng-wrap__55 {
+  width: 55%;
+}
 .eng-wrap__70 {
   width: 70%;
 }

@@ -1,0 +1,137 @@
+.eng-lowerContact {
+  padding: 3.6rem 0 5.1rem;
+  position: relative;
+
+  &__main {
+    & > p {
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  & form {
+    & > div {
+      &:nth-child(n + 3) {
+        margin-top: 1.2rem;
+      }
+
+      &.kind {
+        margin-top: 1.4rem;
+      }
+
+      &.privacy-policy {
+        margin-top: 1.6rem;
+        text-align: center;
+
+        & input {
+          margin-right: 0.5rem;
+        }
+
+        & label {
+          margin: 0;
+        }
+
+        & .wpcf7-list-item {
+          margin: 0;
+        }
+
+        & > p {
+          &:nth-child(1) {
+            color: $color-1;
+            font-family: $yu-gothic;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 1.6rem;
+
+            & > a {
+              color: $color-2;
+              text-decoration: underline;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      &.submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.6rem;
+
+        & > p {
+          transform: translateX(36px);
+        }
+      }
+    }
+
+    & input[type="email"],
+    & input[type="tel"],
+    & input[type="text"],
+    & textarea {
+      border: 0.5px solid $color-1;
+      color: $color-1;
+      font-family: $yu-gothic;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.9rem 1.2rem;
+      width: 100%;
+
+      &::placeholder {
+        color: $color-7 !important;
+      }
+    }
+
+    & input[type="radio"] {
+      margin-right: 0.7rem;
+    }
+
+    & input[type="submit"] {
+      background-color: $color-1;
+      border-radius: 5px;
+      color: $white;
+      font-family: $yu-gothic;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.8rem 4.2rem;
+    }
+
+    & label {
+      color: $color-1;
+      display: inline-block;
+      font-family: $yu-gothic;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+
+      & > strong {
+        font-weight: 700;
+      }
+    }
+
+    & textarea {
+      height: 15rem;
+    }
+
+    & .wpcf7-radio {
+      display: flex;
+      flex-direction: column;
+
+      & > span {
+        margin: 0;
+
+        &:nth-child(n + 2) {
+          margin-top: 0.6rem;
+        }
+
+        & > label {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
