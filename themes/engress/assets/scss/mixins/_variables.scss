@@ -1,5 +1,6 @@
 // background-color, color
 $black: #000000;
+$black-transparent-20: rgba(0, 0, 0, 0.1);
 $color-1: #1B224C;
 $color-2: #F5A623;
 $color-3: #707070;
@@ -16,6 +17,10 @@ $serif: 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'HG明朝E', 'MS P明
 $yu-gothic: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic';
 
 // width
+$two-column-0_5: calc((100% - 0.5rem) / 2);
+$two-column-1: calc((100% - 1rem) / 2);
+$two-column-2: calc((100% - 2rem) / 2);
 $two-column-4: calc((100% - 4rem) / 2);
+$three-column-1: calc((100% - 1rem * 2) / 3);
 $three-column-2: calc((100% - 2rem * 2) / 3);
 $four-column-0_5: calc((100% - 0.5rem * 3) / 4);

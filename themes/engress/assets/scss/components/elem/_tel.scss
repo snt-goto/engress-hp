@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 0.8rem 0 1.4rem;
   position: relative;
-  transform: translateX(-3.6rem);
+  transform: translateX(-3.5rem);
 
   & > p {
     color: $color-1;
@@ -18,6 +18,35 @@
 
     &:nth-child(3) {
       font-weight: 500;
+    }
+  }
+}
+
+@include media_m {
+  .eng-tel {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.3rem;
+    transform: none;
+
+    & > p {
+      &:nth-child(2) {
+        font-size: 2rem;
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-tel {
+    padding: 1.2rem;
+
+    & > p {
+      &:nth-child(2) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

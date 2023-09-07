@@ -5,13 +5,19 @@
 
   &__nav {
     color: $color-1;
+    line-height: 1.7;
 
     & a {
       color: $color-1;
       text-decoration: underline;
 
       &:hover {
+        color: $color-3;
         text-decoration: underline;
+
+        & span {
+          color: $color-3;
+        }
       }
     }
 

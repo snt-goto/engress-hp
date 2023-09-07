@@ -20,6 +20,7 @@
       text-decoration: underline;
 
       &:hover {
+        color: $color-6;
         text-decoration: underline;
       }
     }
@@ -34,10 +35,41 @@
       justify-content: center;
       margin: 1rem 0 1.3rem;
       text-decoration: none;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
       width: 17.5rem;
 
       &:hover {
         text-decoration: none;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@include media_m {
+  .eng-request {
+    height: 16.2rem;
+
+    & > a {
+      &.request {
+        height: 2.8rem;
+        margin: 1rem 0 1.2rem;
+        width: 15.8rem;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-request {
+    height: 14.4rem;
+
+    & > a {
+      &.request {
+        height: 2.5rem;
+        margin: 1rem 0 1.1rem;
+        width: 14.1rem;
       }
     }
   }

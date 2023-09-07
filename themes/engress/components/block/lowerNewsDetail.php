@@ -9,7 +9,7 @@
         <div class="eng-wrap__70">
             <h1 class="eng-lowerNewsDetail__tit"><?php echo $tit ?></h1>
             <p class='eng-lowerNewsDetail__date'><?php echo $date ?></p>
-            <div><?php echo $cont ?></div>
+            <div class="eng-lowerNewsDetail__cont"><?php echo $cont ?></div>
         </div>
     </div>
 </div>

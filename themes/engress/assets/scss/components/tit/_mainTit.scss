@@ -11,4 +11,28 @@
   &.white {
     color: $white;
   }
+
+  & > br[class*="mq"] {
+    display: none;
+  }
+}
+
+@include media_m {
+  .eng-mainTit {
+    font-size: 2rem;
+  }
+}
+
+@include media_s {
+  .eng-mainTit {
+    & > br.mq-s {
+      display: block;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainTit {
+    font-size: 1.8rem;
+  }
 }

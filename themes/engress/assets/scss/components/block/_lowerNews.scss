@@ -3,11 +3,15 @@
   position: relative;
 
   &__link {
+    align-items: center;
     display: flex;
     padding: 1.2rem 0;
     text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 
     &:hover {
+      background-color: $black-transparent-20;
       text-decoration: none;
     }
 
@@ -37,6 +41,44 @@
       &:last-child {
         border-bottom: 1px solid $color-6;
       }
+    }
+  }
+}
+
+@include media_m {
+  .eng-lowerNews {
+    padding: 3.3rem 0 2.6rem;
+
+    &__link {
+      padding: 1.1rem 0;
+
+      & > p {
+        margin-right: 2.1rem;
+      }
+    }
+
+    &__list {
+      margin: 2.4rem 0 4rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-lowerNews {
+    padding: 3rem 0 2.4rem;
+
+    &__link {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 1rem 0;
+
+      & > p {
+        margin: 0 0 0.2rem;
+      }
+    }
+
+    &__list {
+      margin: 2.2rem 0 3.6rem;
     }
   }
 }

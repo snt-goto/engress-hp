@@ -5,3 +5,15 @@
   position: relative;
   text-align: center;
 }
+
+@include media_m {
+  .eng-lowerTit {
+    font-size: 1.9rem;
+  }
+}
+
+@include media_xs {
+  .eng-lowerTit {
+    font-size: 1.8rem;
+  }
+}

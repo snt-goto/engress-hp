@@ -65,7 +65,7 @@
                                 $tit = get_the_title();
                             ?>
                             <li>
-                                <a class="eng-mainPost__link" href="<?php echo $href; ?>">
+                                <a class="eng-mainPost__link news" href="<?php echo $href; ?>">
                                     <p><?php echo $date; ?></p>
                                     <p><?php echo wp_trim_words($tit, 40, '…'); ?></p>
                                 </a>

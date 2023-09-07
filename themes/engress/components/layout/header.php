@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="eng-header__right">
-                <div>
+                <div class="eng-header__info">
                     <p><?php global $BUSINESS_HOURS; echo $BUSINESS_HOURS; ?></p>
                     <div class="eng-header__tel">
                         <img src="<?php echo_img('tel_navy.svg') ?>" alt=""/>
@@ -36,6 +36,7 @@
                 </div>
                 <a class="request" href="/contact">資料請求</a>
                 <a class="contact" href="/contact">お問い合わせ</a>
+                <?php get_template_part('components/elem/mobileMenu'); ?>
             </div>
         </div>
     </div>

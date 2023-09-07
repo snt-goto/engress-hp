@@ -7,3 +7,23 @@
     margin-top: 2rem;
   }
 }
+
+@include media_m {
+  .eng-mainFaq {
+    padding-top: 4.2rem;
+
+    &__list {
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainFaq {
+    padding-top: 3.8rem;
+
+    &__list {
+      margin-top: 1.6rem;
+    }
+  }
+}

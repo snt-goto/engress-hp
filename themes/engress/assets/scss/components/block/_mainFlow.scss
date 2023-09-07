@@ -7,3 +7,23 @@
     margin-top: 3.3rem;
   }
 }
+
+@include media_m {
+  .eng-mainFlow {
+    padding-top: 3.3rem;
+
+    &__list {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainFlow {
+    padding-top: 3rem;
+
+    &__list {
+      margin-top: 2.7rem;
+    }
+  }
+}

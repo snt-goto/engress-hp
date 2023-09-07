@@ -4,8 +4,12 @@
 
   & > a {
     text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 
     &:hover {
+      background-color: $color-1;
+      color: $white;
       text-decoration: none;
     }
   }
@@ -41,6 +45,32 @@
       height: auto;
       margin: 0 1.5rem;
       width: auto;
+    }
+  }
+}
+
+@include media_m {
+  .nav-links {
+    & > .page-numbers {
+      height: 2.8rem;
+      width: 2.8rem;
+
+      &.dots {
+        margin: 0 1.4rem;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .nav-links {
+    & > .page-numbers {
+      height: 2.5rem;
+      width: 2.5rem;
+
+      &.dots {
+        margin: 0 1.3rem;
+      }
     }
   }
 }

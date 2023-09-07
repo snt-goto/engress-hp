@@ -2,6 +2,12 @@
   padding: 3.6rem 0;
   position: relative;
 
+  &__cont {
+    & ul {
+      list-style-position: inside;
+    }
+  }
+
   &__date {
     color: $color-1;
     font-size: 1rem;
@@ -15,5 +21,33 @@
     font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.7;
+  }
+}
+
+@include media_m {
+  .eng-lowerNewsDetail {
+    padding: 3.3rem 0;
+
+    &__date {
+      margin: 2rem 0 3.3rem;
+    }
+
+    &__tit {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-lowerNewsDetail {
+    padding: 3rem 0;
+
+    &__date {
+      margin: 1.8rem 0 3rem;
+    }
+
+    &__tit {
+      font-size: 1.5rem;
+    }
   }
 }

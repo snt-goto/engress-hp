@@ -18,9 +18,16 @@
         text-decoration: none;
 
         &:hover {
+          color: $color-2;
           text-decoration: none;
         }
       }
+    }
+  }
+
+  &__cont {
+    & ul {
+      list-style-position: inside;
     }
   }
 
@@ -134,6 +141,7 @@
       text-decoration: none;
 
       &:hover {
+        opacity: 0.7;
         text-decoration: none;
       }
     }
@@ -200,6 +208,7 @@
     }
 
     &:hover {
+      opacity: 0.7;
       text-decoration: none;
     }
   }
@@ -236,8 +245,139 @@
         }
 
         &:nth-child(n + 2) {
-          margin-left: .3rem;
+          margin-left: 0.3rem;
         }
+      }
+    }
+  }
+}
+
+@include media_m {
+  .eng-lowerBlogDetail {
+    padding: 3.4rem 0 3.9rem;
+
+    &__img {
+      height: 20.8rem;
+      margin-bottom: 2.1rem;
+    }
+
+    &__info {
+      margin: 1.1rem 0 1.4rem;
+    }
+
+    &__left {
+      & > h1 {
+        font-size: 1.6rem;
+      }
+
+      & > p {
+        &.category {
+          margin-bottom: 1.3rem;
+          padding: 0.3rem 1.5rem;
+        }
+      }
+    }
+
+    &__recommendedArticles {
+      margin-top: 3.3rem;
+
+      & > h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.3rem;
+      }
+    }
+
+    &__recommendedArticlesImg {
+      height: 7.2rem;
+      margin-right: 1.5rem;
+      width: 11.8rem;
+    }
+
+    &__recommendedArticlesItem {
+      &:nth-child(n + 2) {
+        margin-top: 1.7rem;
+      }
+    }
+
+    &__relatedArticles {
+      margin-bottom: 2.7rem;
+
+      & > li {
+        &:nth-child(n + 2) {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+
+    &__relatedArticlesImg {
+      height: 3.9rem;
+      width: 5.6rem;
+    }
+
+    &__right {
+      margin-left: 2rem;
+      width: 15.2rem;
+
+      & h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+}
+
+@include media_s {
+  .eng-lowerBlogDetail {
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-lowerBlogDetail {
+    padding: 3.1rem 0 3.5rem;
+
+    &__img {
+      height: 18.5rem;
+      margin-bottom: 1.9rem;
+    }
+
+    &__info {
+      margin: 1rem 0 1.3rem;
+    }
+
+    &__left {
+      & > h1 {
+        font-size: 1.5rem;
+      }
+
+      & > p {
+        &.category {
+          margin-bottom: 1.2rem;
+          padding: 0.3rem 1.4rem;
+        }
+      }
+    }
+
+    &__recommendedArticles {
+      margin-top: 3rem;
+
+      & > h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    &__recommendedArticlesImg {
+      height: 6.4rem;
+      margin-right: 1rem;
+      width: 10.5rem;
+    }
+
+    &__recommendedArticlesItem {
+      &:nth-child(n + 2) {
+        margin-top: 1.6rem;
       }
     }
   }

@@ -33,3 +33,27 @@
     }
   }
 }
+
+@include media_m {
+  .eng-lowerVisual {
+    &__tit {
+      height: 16.5rem;
+
+      & > h1 {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-lowerVisual {
+    &__tit {
+      height: 18rem;
+
+      & > h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

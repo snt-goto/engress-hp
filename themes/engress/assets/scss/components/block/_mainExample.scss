@@ -36,9 +36,8 @@
       display: flex;
       font-size: 1rem;
       font-weight: 500;
-      height: 2rem;
       line-height: 1.8;
-      padding: 0 0.6rem;
+      padding: 0.1rem 0.6rem;
 
       &.job {
         flex-shrink: 0;
@@ -65,5 +64,99 @@
     display: flex;
     list-style: none;
     margin-top: 8.5rem;
+  }
+}
+
+@include media_l {
+  .eng-mainExample {
+    &__info {
+      flex-direction: column;
+    }
+
+    &__item {
+      & p {
+        &.job {
+          margin: 0 0 0.6rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media_m {
+  .eng-mainExample {
+    padding: 3.3rem 0 3.5rem;
+
+    &__img {
+      height: 9.8rem;
+    }
+
+    &__item {
+      width: $three-column-1;
+
+      &:nth-child(n + 2) {
+        margin-left: 1rem;
+      }
+    }
+
+    &__list {
+      margin-top: 7.7rem;
+    }
+  }
+}
+
+@include media_s {
+  .eng-mainExample {
+    &__item {
+      width: $two-column-1;
+
+      &:nth-child(n + 2) {
+        margin-left: 0;
+      }
+
+      &:nth-child(2) {
+        margin-left: 1rem;
+      }
+
+      &:nth-child(3) {
+        margin: 1.8rem auto 0;
+      }
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainExample {
+    padding: 3rem 0 3.2rem;
+
+    &__img {
+      height: 8.8rem;
+    }
+
+    &__item {
+      width: $two-column-0_5;
+
+      &:nth-child(n + 2) {
+        margin-left: 0;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0.5rem;
+      }
+
+      &:nth-child(3) {
+        margin: 1.6rem auto 0;
+      }
+    }
+
+    &__list {
+      margin-top: 2.9rem;
+    }
   }
 }

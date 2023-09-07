@@ -10,7 +10,7 @@
     <?php
         $args = [
             'color' => 'white',
-            'tit' => 'TOEFL学習でこんな悩みありませんか？'
+            'tit' => 'TOEFL学習で<br class="mq-s"/>こんな悩みありませんか？'
         ];
         get_template_part('components/tit/mainTit', null, $args );
     ?>
@@ -31,10 +31,10 @@
                     <h3>
                         Engressは
                         <br/>
-                        <span>TOEFLに特化したスクール</span>です
+                        <span>TOEFLに特化した<br class="mq-s"/>スクール</span>です
                     </h3>
                     <p>
-                        完全オーダーメイドで、1人1人の悩みに合わせた最適な指導で
+                        完全オーダーメイドで、<br class="mq-s"/>1人1人の悩みに合わせた最適な指導で
                         <br/>
                         TOEFLの苦手分野を克服します。
                     </p>

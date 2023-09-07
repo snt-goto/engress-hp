@@ -22,7 +22,7 @@
                     <div class="eng-lowerBlogDetail__img">
                         <img src="<?php echo $img; ?>" alt="" />
                     </div>
-                    <div><?php echo $cont ?></div>
+                    <div class="eng-lowerBlogDetail__cont"><?php echo $cont ?></div>
                     <div class="eng-lowerBlogDetail__recommendedArticles">
                         <h2>おすすめの記事</h2>
                         <ul>
@@ -34,7 +34,7 @@
                                 );
                                 $blog_posts = get_posts($args);
                             ?>
-                                <?php foreach ($blog_posts as $post) : setup_postdata($post);?>
+                                <?php foreach ($blog_posts as $post): setup_postdata($post);?>
                                     <?php
                                         $category = get_the_category()[0] -> name;
                                         $date = get_the_date();

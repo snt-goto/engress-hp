@@ -11,6 +11,16 @@
     padding: 0.9rem;
   }
 
+  &__info {
+    & > p {
+      color: $color-1;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 0.1rem;
+      text-align: right;
+    }
+  }
+
   &__left {
     align-items: center;
     display: flex;
@@ -51,6 +61,8 @@
       height: 3.1rem;
       justify-content: center;
       text-decoration: none;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
       width: 8.8rem;
 
       &:hover {
@@ -59,21 +71,19 @@
 
       &.contact {
         background-color: $color-1;
+
+        &:hover {
+          background-color: $color-3;
+        }
       }
 
       &.request {
         background-color: $color-2;
         margin: 0 0.6rem 0 1.4rem;
-      }
-    }
 
-    & > div {
-      & > p {
-        color: $color-1;
-        font-size: 0.8rem;
-        font-weight: 500;
-        margin-bottom: 0.1rem;
-        text-align: right;
+        &:hover {
+          background-color: $color-3;
+        }
       }
     }
   }
@@ -93,6 +103,38 @@
       color: $color-1;
       font-size: 1rem;
       font-weight: 700;
+    }
+  }
+}
+
+@include media_m {
+  .eng-header {
+    &__info {
+      display: none;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__logo {
+      width: 8rem;
+    }
+
+    &__right {
+      align-items: center;
+
+      & > a {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-header {
+    &__logo {
+      width: 7.5rem;
     }
   }
 }

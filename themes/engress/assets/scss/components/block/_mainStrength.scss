@@ -33,9 +33,13 @@
       height: 3.1rem;
       justify-content: center;
       text-decoration: none;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
       width: 12.5rem;
 
       &:hover {
+        background-color: $white;
+        color: $color-1;
         text-decoration: none;
       }
     }
@@ -44,5 +48,53 @@
   &__list {
     list-style: none;
     margin: 3.6rem 0 5.8rem;
+  }
+}
+
+@include media_m {
+  .eng-mainStrength {
+    padding: 3.3rem 0 2.2rem;
+
+    &__bnr {
+      height: 12.2rem;
+
+      & > h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.3rem;
+      }
+
+      & > a {
+        height: 2.8rem;
+        width: 11.3rem;
+      }
+    }
+
+    &__list {
+      margin: 3.3rem 0 5.3rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainStrength {
+    padding: 3rem 0 2rem;
+
+    &__bnr {
+      height: 10.9rem;
+
+      & > h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+      }
+
+      & > a {
+        height: 2.5rem;
+        width: 10.1rem;
+      }
+    }
+
+    &__list {
+      margin: 3rem 0 4.8rem;
+    }
   }
 }

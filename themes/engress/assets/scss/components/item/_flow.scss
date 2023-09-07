@@ -17,12 +17,14 @@
       background-color: $color-2;
       color: $white;
       display: flex;
+      flex-shrink: 0;
       justify-content: center;
       height: 4rem;
       width: 4rem;
     }
 
     &:nth-child(2) {
+      flex-shrink: 0;
       font-size: 1.1rem;
       padding: 0 1.3rem;
       position: relative;
@@ -44,5 +46,50 @@
       font-weight: 500;
       padding: 0 3rem;
     }
+  }
+}
+
+@include media_m {
+  .eng-flow {
+    & > p {
+      &:nth-child(2) {
+        padding: 0 1.2rem;
+      }
+
+      &:nth-child(3) {
+        padding: 0 2.7rem;
+      }
+    }
+  }
+}
+
+@include media_s {
+  .eng-flow {
+    flex-direction: column;
+    padding: 2.5rem;
+
+    & > p {
+      &:nth-child(2) {
+        margin: 0.9rem 0 0.3rem;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+        &::before {
+          content: none;
+        }
+      }
+
+      &:nth-child(3) {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-flow {
+    padding: 2rem;
   }
 }

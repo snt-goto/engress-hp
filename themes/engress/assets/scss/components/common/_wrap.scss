@@ -13,3 +13,27 @@ div[class*='eng-wrap'] {
     width: 70%;
   }
 }
+
+@include media_m {
+  .eng-wrap {
+    &__55 {
+      width: 72.5%;
+    }
+
+    &__70 {
+      width: 80%;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-wrap {
+    &__55 {
+      width: 90%;
+    }
+
+    &__70 {
+      width: 90%;
+    }
+  }
+}

@@ -22,7 +22,7 @@
     <?php
         $args = [
             'color' => 'navy',
-            'tit' => 'TOEFL対策に特化したEngress3つの強み'
+            'tit' => 'TOEFL対策に特化した<br class="mq-s"/>Engress3つの強み'
         ];
         get_template_part('components/tit/mainTit', null, $args );
     ?>

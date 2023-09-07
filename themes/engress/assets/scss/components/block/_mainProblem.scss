@@ -3,17 +3,10 @@
   padding: 3.9rem 0 3.3rem;
   position: relative;
 
-  & > h2 {
-    color: $white;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: center;
-  }
-
   & > ul {
-    list-style: none;
     display: flex;
     justify-content: center;
+    list-style: none;
     margin: 3rem 0 5rem;
     transform: translateX(-1rem);
   }
@@ -35,6 +28,10 @@
       line-height: 1.4;
       margin-bottom: 1.2rem;
 
+      & br[class*="mq"] {
+        display: none;
+      }
+
       & > span {
         background: $linear-gradient-1;
       }
@@ -45,6 +42,80 @@
       font-size: 1.1rem;
       font-weight: 500;
       line-height: 1.7;
+
+      & > br[class*="mq"] {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media_m {
+  .eng-mainProblem {
+    padding: 3.6rem 0 3rem;
+
+    & > ul {
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 2.7rem 0 4.5rem;
+      transform: none;
+    }
+
+    &__school {
+      padding: 0.6rem 0.9rem;
+
+      & div {
+        border: 4px solid $color-1;
+        padding: 0.6rem 0 1.4rem;
+      }
+
+      & h3 {
+        font-size: 2rem;
+        margin-bottom: 1.1rem;
+      }
+    }
+  }
+}
+
+@include media_s {
+  .eng-mainProblem {
+    &__school {
+      & h3 {
+        & br.mq-s {
+          display: block;
+        }
+      }
+
+      & p {
+        & > br.mq-s {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-mainProblem {
+    padding: 3.3rem 0 2.7rem;
+
+    & > ul {
+      margin: 2.4rem 0 4rem;
+    }
+
+    &__school {
+      padding: 0.5rem 0.8rem;
+
+      & div {
+        border: 3px solid $color-1;
+        padding: 0.6rem 0 1.3rem;
+      }
+
+      & h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

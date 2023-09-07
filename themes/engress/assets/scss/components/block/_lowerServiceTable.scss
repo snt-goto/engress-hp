@@ -62,9 +62,11 @@
   }
 
   &__list {
-    display: flex;
-    list-style: none;
-    margin-top: 4.2rem;
+    & > ul {
+      display: flex;
+      list-style: none;
+      margin-top: 4.2rem;
+    }
   }
 
   &__price {
@@ -98,3 +100,67 @@
   }
 }
 
+@include media_l {
+  .eng-lowerServiceTable {
+    &__list {
+      overflow-x: scroll;
+
+      & > ul {
+        margin: 4.2rem auto 0;
+        width: 57rem;
+      }
+    }
+  }
+}
+
+@include media_m {
+  .eng-lowerServiceTable {
+    padding: 5.1rem 0 3.5rem;
+
+    &__list {
+      & > ul {
+        margin-top: 3.8rem;
+      }
+    }
+
+    &__price {
+      margin-bottom: 2.4rem;
+
+      & > p {
+        &:nth-child(1) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &__txt {
+      padding: 1.7rem 1.4rem 5.3rem;
+    }
+  }
+}
+
+@include media_xs {
+  .eng-lowerServiceTable {
+    padding: 4.6rem 0 3.2rem;
+
+    &__list {
+      & > ul {
+        margin-top: 3.4rem;
+      }
+    }
+
+    &__price {
+      margin-bottom: 2.2rem;
+
+      & > p {
+        &:nth-child(1) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__txt {
+      padding: 1.6rem 1.3rem 4.8rem;
+    }
+  }
+}

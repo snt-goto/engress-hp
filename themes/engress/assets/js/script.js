@@ -13,6 +13,15 @@ window.onresize = () => {
     setHeight();
 };
 
+// モバイルナビゲーション
+const listElem = document.getElementById('eng-mobileMenu__list'),
+    btnElem = document.getElementById('eng-mobileMenu__btn');
+
+btnElem.onclick = () => {
+    listElem.classList.toggle('open');
+    btnElem.classList.toggle('open');
+}
+
 // よくある質問アコーディオン
 const faqElems = Array.from(document.getElementsByClassName("eng-faq"));
 
@@ -25,3 +34,11 @@ faqElems.forEach((i) => {
         question.classList.toggle('display');
     })
 })
+
+// ScrollHintの設定
+new ScrollHint('.scrollHint', {
+  i18n: {
+    scrollable: 'スクロールできます'
+  },
+  scrollHintIconAppendClass: 'scroll-hint-icon-white'
+});

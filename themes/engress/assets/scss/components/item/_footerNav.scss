@@ -31,7 +31,32 @@
     text-decoration: none;
 
     &:hover {
+      color: $color-5;
       text-decoration: none;
+    }
+  }
+}
+
+@include media_m {
+  .eng-footerNav {
+    padding: 0 1.2rem;
+
+    &:nth-child(n + 2) {
+      &::before {
+        height: 1.3rem;
+      }
+    }
+  }
+}
+
+@include media_xs {
+  .eng-footerNav {
+    padding: 0 1.1rem;
+
+    &:nth-child(n + 2) {
+      &::before {
+        height: 1.2rem;
+      }
     }
   }
 }
