@@ -23,6 +23,19 @@
     }
     add_action( 'wp_enqueue_scripts', 'add_link_files' );
 
+    // お問い合わせ完了後、サンクスページに飛ばす
+    function redirect_to_thanks_page() {
+        $homeUrl = home_url();
+        echo <<< EOD
+        <script>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            location = '{$homeUrl}/thanks/';
+        }, false );
+        </script>
+        EOD;
+    }
+    add_action('wp_footer', 'redirect_to_thanks_page');
+
     // 投稿非表示
     function remove_menus() {
         remove_menu_page( 'edit.php' );

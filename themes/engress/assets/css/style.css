@@ -480,10 +480,33 @@
   text-align: center;
 }
 .eng-lowerContact form > div.privacy-policy input {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  opacity: 0;
 }
 .eng-lowerContact form > div.privacy-policy label {
   margin: 0;
+  position: relative;
+}
+.eng-lowerContact form > div.privacy-policy label::before {
+  border: 1px solid #707070;
+  content: "";
+  height: 1.2rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1.2rem;
+}
+.eng-lowerContact form > div.privacy-policy label.checked::after {
+  content: "✔️";
+  font-size: 0.8rem;
+  left: 0.6rem;
+  position: absolute;
+  height: 1.2rem;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .eng-lowerContact form > div.privacy-policy .wpcf7-list-item {
   margin: 0;
@@ -541,7 +564,8 @@
   color: #B4B4B4 !important;
 }
 .eng-lowerContact form input[type=radio] {
-  margin-right: 0.7rem;
+  margin-right: 1.4rem;
+  opacity: 0;
 }
 .eng-lowerContact form input[type=submit] {
   background-color: #1B224C;
@@ -590,6 +614,31 @@
 }
 .eng-lowerContact form .wpcf7-radio > span > label {
   margin: 0;
+  position: relative;
+}
+.eng-lowerContact form .wpcf7-radio > span > label::before {
+  border: 1px solid #707070;
+  border-radius: 50%;
+  content: "";
+  height: 1.2rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1.2rem;
+}
+.eng-lowerContact form .wpcf7-radio > span > label.checked::after {
+  background-color: #707070;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.6rem;
+  width: 0.6rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 0.6rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2326,6 +2375,7 @@ div[class*=eng-wrap] {
   margin-top: 0.5rem;
 }
 .eng-flow > p {
+  color: #1B224C;
   font-size: 1rem;
   font-weight: 700;
 }

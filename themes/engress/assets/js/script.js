@@ -1,3 +1,5 @@
+const pathname = location.pathname;
+
 // ヘッダーの余白
 const headerElem = document.getElementById('eng-header'),
     bodyElem = document.getElementsByTagName('body')[0];
@@ -42,3 +44,32 @@ new ScrollHint('.scrollHint', {
   },
   scrollHintIconAppendClass: 'scroll-hint-icon-white'
 });
+
+// お問い合わせフォーム
+if(pathname === '/contact/') {
+  const radioElem = document.getElementsByClassName('wpcf7-radio')[0],
+  radioLabelElems = radioElem.getElementsByTagName('label');
+
+  const removeChecked = () => {
+    Array.from(radioLabelElems).forEach((i) => {
+      i.classList.remove('checked');
+    });
+  };
+
+  Array.from(radioLabelElems).forEach((i) => {
+    const inputElem = i.getElementsByTagName('input')[0];
+
+    inputElem.onchange = () => {
+      removeChecked();
+      i.classList.add('checked');
+    }
+  })
+
+  const checkboxElem = document.getElementsByClassName('wpcf7-checkbox')[0],
+    checkboxLabelElem = checkboxElem.getElementsByTagName('label')[0],
+    checkboxInputElem = checkboxLabelElem.getElementsByTagName('input')[0];
+
+    checkboxInputElem.onchange = () => {
+      checkboxLabelElem.classList.toggle('checked');
+    };
+}
