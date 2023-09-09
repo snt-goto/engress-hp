@@ -1,4 +1,9 @@
 <?php
+    // アイコンURL取得
+    function echo_ico($path) {
+        echo get_stylesheet_directory_uri() . '/assets/ico/' . $path;
+    }
+
     // 画像URL取得
     function echo_img($path) {
         echo get_stylesheet_directory_uri() . '/assets/img/' . $path;
